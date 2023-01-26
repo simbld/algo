@@ -1,0 +1,95 @@
+/*
+*<!DOCTYPE html>
+*<html lang="en">
+*	<head>
+*		<meta charset="UTF-8" />
+*		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+*		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+*		<title>Les boites de dialogues</title>
+*	</head>
+*	<body>
+*		<div class="container">
+*			<h1 class="fa-address-book">Les boites de dialogues</h1>
+*		<button id="btnAlert">Alert</button>
+*			<button id="btnConfirm">Confirm</button>
+*			<button id="btnPrompt">Prompt</button>
+*		<script src="exemple.js"></script>
+*	</body>
+*</html>
+*
+*/
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.container .fa-address-book {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+.container #btnAlert {
+	width: 100px;
+	height: 50px;
+	background-color: #f1f1f1;
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin: 10px;
+	cursor: pointer;
+}
+.container #btnAlert:hover {
+	background-color: #000;
+	color: #fff;
+}
+.container #btnAlert:active {
+	background-color: #fff;
+	color: #000;
+}
+.container #btnAlert:focus {
+	outline: none;
+}
+.container #btnConfirm {
+	width: 100px;
+	height: 50px;
+	background-color: #943e3e;
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin: 10px;
+	cursor: pointer;
+}
+.container #btnConfirm:hover {
+	background-color: #000;
+	color: #4b0859;
+}
+.container #btnConfirm:active {
+	background-color: #9c4747;
+	color: #000;
+}
+.container #btnConfirm:focus {
+	outline: none;
+}
+.container #btnPrompt {
+	width: 100px;
+	height: 50px;
+	background-color: #ee3c3c;
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin: 10px;
+	cursor: pointer;
+}
+.container #btnPrompt:hover {
+	background-color: #000;
+	color: #71bb10;
+}
+.container #btnPrompt:active {
+	background-color: #136777;
+	color: #000;
+}
+.container #btnPrompt:focus {
+	outline: none;
+}
+.container script {
+	display: none;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>HTML_only</title>
+
+  <link rel="icon" type="image/png" href="../../images/favicon-64px.png" />
+</head>
+
+<body>
+  <h1>Mon titre est un h1</h1>
+  <p>
+    Ici, je vais entourer du texte en ecrivant la balise <code>code</code>.
+  </p>
+  <p>
+    Je peux aussi ajouter un lien qui sera surligné grâce à la balise "a" qui contient 'href="https:ect ... et
+    target="_blank"' a l'intérieur<a href="https://https://developer.mozilla.org/fr/" target="_blank">la documentation
+      pour faire les exercices</a> pour bien s'aider.
+  </p>
+
+  <h2>Mon titre est un h2</h2>
+
+  <ul>
+    <li>
+      <p>Je crée une liste avec la balise "ul puis ses enfants li pour écrire une liste avec des puces" et je fais un
+        "<br>" pour forcer un retour à la ligne après ce <strong>mot</strong><br>mot qui a été mis en gras grâce à la
+        balise "strong"</p>
+      <details>
+        <summary>Si tu cliques ici une bulle va s'ouvrir</summary>
+        <p><strong>1er paragraphe</strong> j'ai ouvert une balise "details" pour afficher la bulle puis la balise
+          "summary" pour les paragraphes
+      </details>
+
+      <details>
+        <summary><strong>2ème paragraphe</strong></summary>
+        <p> on peut afficher une image<img src="../../images/console-developpeur.jpg"
+            alt="Onglet console de la console développeur" style="width: 100%"><code>Je peux y mettre du style avec
+            "style="width: 100%"</code></p>
+      </details>
+      </p>
+    </ul>
+
+      <ul>
+        <ol>
+          <p>Romain Guillemot explique très bien l'utilité de faire du html first <code><a
+                href="https://rocambille.github.io/fr/2022/05/02/comment-faire-une-modale-avec-react-l-approche-html-first/"
+                target="_blank">dans cette vidéo.</a></code></p>
+
+          <ol>Ici j'écris une liste avec un "ul puis son enfant ol, qui crée une liste avec des numéros"
+          </ol>
+          <h3>Attention à la sauvegarde automatique dans VSCode !</h3>
+          <p>Dans les paramètres, je vous conseille d'utiliser l'option <code>onFocusChange</code> pour la sauvegarde
+            automatique.</p>
+          <img src="../../images/autosave.jpg" alt="configuration option sauvegarde automatique vscode"
+            style="width: 100%">
+          <p>Par ailleurs, si tu décides de construire un site web qui contiendra beaucoup de code, le mieux est de le
+            commenter, on peut commenter ainsi <code>"
+              <!-- Commentaires -->"</code> afin de mieux s'y retrouver!</p>
+          <p>en CSS on pourra le faire ainsi <code>/* commentaires</code>
+            <p>en JS on pourra le faire ainsi pour une seule ligne <code>// commentaires</code>
+              <p>en JS on pourra le faire ainsi pour plusieurs lignes <code>/* commentaires */</code>
+
+              </p>
+              </details>
+    </li>
+    <li>
+      <p>Romain Guillemot explique très bien l'utilité de faire du html first <a
+          href="https://rocambille.github.io/fr/2022/05/02/comment-faire-une-modale-avec-react-l-approche-html-first/"
+          target="_blank">dans cette vidéo</a>.</p>
+    </li>
+
+    <h2>Documentation</h2>
+    <ul>
+      <li>
+        <a class="mdn" href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String"
+          target="_blank">Consulter la doc MDN sur les chaînes de caractères</a>
+      </li>
+    </ul>
+
+    <h2>Objectifs</h2>
+    <ul>
+      <li>Utiliser l'instruction <code>console.log()</code> pour afficher des chaînes de caractères.</li>
+      <li>Échapper des caractères avec <code>\</code>.</li>
+      <li>Concaténer plusieurs chaînes de caractères avec l'opérateur <code>+</code>.</li>
+      <li>Utiliser les littéraux de gabarit <code>``</code> pour construire des chaînes de caractères.</li>
+    </ul>
+
+    <div class="message"></div>
+    </div>
+
+    <div class="enonce bogue" id="enonce-6">
+      <h2>Chassez le bogue ! 0</h2>
+      <img alt="insecte" src="../../images/insecte-ricane.png" />
+
+      <p>
+        Tom vient juste de se faire embaucher dans la société <strong>MagiciensDuCode</strong> en tant que développeur
+        JavaScript junior.
+      </p>
+      <p>
+        Aujourd'hui, son patron Hugo vient le voir car il prépare une grosse campagne marketing. Il a besoin d'envoyer
+        une lettre personnalisée à chaque client qui commence comme ça :
+      </p>
+      <p class="code">Bonjour &lt;prénom du client&gt;, aujourd'hui nous faisons une promo "la fidélité paye" !</p>
+      <p class="clearboth">
+        Tom doit écrire une chaîne de caractère qui permet d'écrire cette phrase pour chaque client. Pour l'instant il
+        essaye de faire fonctionner son code avec le prénom "Bob".
+      </p>
+      <p>Malheureusement son code ne fonctionne pas, pouvez-vous corriger ses erreurs ?</p>
+      <div class="message"></div>
+    </div>
+
+    <div class="enonce bogue" id="enonce-7">
+      <h2>Chassez le bogue ! 1</h2>
+      <img alt="insecte" src="../../images/insecte-ricane.png" />
+
+      <p>Du texte bien écris dans une bulle ressemble à ça</p>
+      <p display: inline-block; color: white; background-color: noir;>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J'utilise "&nbsp" pour tab &lt; et "&lt" pour aller à la
+        ligne.&gt;,<br /><br />Et voila, un texte qui s'affiche plus proprement !
+      </p>
+
+      <p clear: both;>
+        La première ligne contient 2 caractères <code>tabulation</code> juste avant le <code>Bonjour</code>. On peut
+        voir ça dans la doc.
+        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String">dans la doc</a>
+        et commencé à rédiger du code.
+      </p>
+      <p></p>
+      <p style="content: '🔥',
+  margin-right" : red">Veillez à utiliser des caractères <code>tabulation</code> et pas des espaces !</p>
+      <br />
+
+    </div>
+
+    <footer>
+      Ici c'est le footer</a> par
+      <a href="https://twitter.com/JeremyMouzin">lien vers les cours de JS</a>
+    </footer>
+    
+
+</body>
+
+</html>
